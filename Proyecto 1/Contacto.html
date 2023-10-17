@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+ <header class="container-nav">
+        <nav class="navbar">
+          <a href="index.html" class="brand"></a>
+          <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="">Galeria</a></li>
+            <li><a href="">Servicios</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+  </header>
+
+  <section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26221.155622243397!2d-58.44228545007648!3d-34.76454820983185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1squinta%20lomas%20de%20zamora!5e0!3m2!1ses!2sar!4v1696552340143!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+  </section>
+  
+  <section id="contact">
+      <h2>Escribinos</h2>
+      <form id="miFormulario" action="show-data.html" target="_blank">
+          <fieldset>
+            <label for="firstname">Nombre: </label>
+            <input size="60" type="text" name="firstname" placeholder="Ingrese su nombre aqui...">
+            <label for="Email">Email: </label>
+            <input size="60" type="text" name="Email" placeholder="Ingrese su Email">
+            <br><br> 
+            <label for="Asunto">Asunto: </label>
+            <input size="30" type="text" name="Asunto" placeholder="Asunto">
+            <br><br> 
+            <label for="Mensaje">Mensaje:</label>
+            <textarea name="Mensaje" rows="5" cols="100"></textarea>
+        </fieldset>
+        <button onclick="showAlert()">Enviar</button>
+        <button type="button" onclick="limpiarFormulario()">Eliminar</button>
+      </form>       
+</section>
+
+<section id="Contacto">
+    <div class="container">
+          <h2>Contacto</h2>
+          <p>Puedes contactarnos a través de los siguientes medios:</p>
+          <ul>
+            <li><img src="Imagenes/correo.jpg" alt=""  class="logo"> info@quintasenalquiler.com </li>
+            <li><img src="Imagenes/w.jpg" alt="" class="logo"> 1122334455</li>
+            <li><img src="Imagenes/facebook.jpg" alt="" class="logo"> seguinos en facebook</li>
+            <li><img src="Imagenes/instagram.jpg" alt="" class="logo"> encontranos en instagram</li>
+          </ul>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+      <p>&copy;  2023 Quintas en Alquiler</p>
+    </div>
+</footer>
+
+<script src="JavaScript.js"></script>
+</body>
+</html>
