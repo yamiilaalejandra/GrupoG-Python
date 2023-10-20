@@ -1,0 +1,73 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #650c0c;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos del héroe */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c4be11;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #c3bc00;
+}
+
+/* Estilos de Acerca de Nosotros */
+.about {
+    background-color: #fff;
+    padding: 40px;
+}
+
+/* Estilos de Contacto */
+.contact {
+    background-color: #eee;
+    padding: 40px;
+}
+
+/* Estilos del footer */
+footer {
+    text-align: center;
+    background-color: #650c0c;
+    color: #fff;
+    padding: 10px 0;
+}
