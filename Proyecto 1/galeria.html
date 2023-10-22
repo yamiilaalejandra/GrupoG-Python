@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/galeria.css">
+    <title>Galeria</title>
+</head>
+<body>
+    <header>
+        <h1>Quintas en Alquiler</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Quintas Disponibles</a></li>
+                <li><a href="#">Servicios y Tarifas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button class="boton-aside" onclick="openAside()"><img src="./iconos/icons8-menú-64.png" alt=""></button>
+    <aside class="contenedor-aside esconder" id="abierto_cerrar">
+        <div class="contenedor-dat">
+            <div class="form-dat">
+                <div class="tit-form">
+                    <h2>Filtrar por</h2>
+                </div>
+                <h4 class="ti-h4">Rango de precio</h4>
+                <div class="button-form">
+                    <button><a href="#">Dia</a></button>
+                    <button><a href="#">Semana</a></button>
+                    <button><a href="#">Quincena</a></button>
+                    <button><a href="#">Mes</a></button>
+                </div>
+                <div class="cajs-radio">
+                    <form>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio">
+                                <label for="">Entre $0 y $500</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio">
+                                <label for="">Entre $500 y $1.000</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio">
+                                <label for="">Entre $1.000 y $2.000</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio">
+                                <label for="">Entre $2.000 y $4.000</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio">
+                                <label for="">Mas de $4.000</label>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="cajs-radio">
+                    <form >
+                        <h4 class="ti-h4">Caracteristicas</h4>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio">
+                                <label for="">Aire acondicionado</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio">
+                                <label for="">Calefaccion</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio">
+                                <label for="">DVD</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio" name="" id="">
+                                <label for="">Garage</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio" name="" id="">
+                                <label for="">Jardin</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio" name="" id="">
+                                <label for="">Parrilla</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio" name="" id="">
+                                <label for="">Pileta</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio" name="" id="">
+                                <label for="">Television</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio" name="" id="">
+                                <label for="">Wifi</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio" name="" id="">
+                                <label for="">Acepta mascotas</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio" name="" id="">
+                                <label for="">Acepta grupos de jovenes</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio" name="" id="">
+                                <label for="">Ecosustentable</label>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="cajs-radio">
+                    <form action="">
+                        <h4 class="ti-h4">Cantidad de personas</h4>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio">
+                                <label for="">1persona</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio">
+                                <label for="">2 personas </label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio">
+                                <label for="">3 personas </label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio" name="" id="">
+                                <label for="">4 personas</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio" name="" id="">
+                                <label for="">5 personas</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio" name="" id="">
+                                <label for="">6 personas</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio" name="" id="">
+                                <label for="">7 personas</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio" name="" id="">
+                                <label for="">8 personas</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio" name="" id="">
+                                <label for="">9 personas</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio" name="" id="">
+                                <label for="">10 personas</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio" name="" id="">
+                                <label for="">11 personas</label>
+                            </a>
+                        </div>
+                        <div class="radio-form">
+                            <a href="">
+                                <input type="radio" name="" id="">
+                                <label for="">12 personas</label>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main class="container-main">
+        <section>
+            <div class="container">
+                <div class="carousel">
+                    <input type="radio" name="slides" checked="checked" id="slide-1">
+                    <input type="radio" name="slides" id="slide-2">
+                    <input type="radio" name="slides" id="slide-3">
+                    <input type="radio" name="slides" id="slide-4">
+                    <input type="radio" name="slides" id="slide-5">
+                    <input type="radio" name="slides" id="slide-6">
+                    <ul class="carousel__slides">
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="./img/galeria/2f44d3c52f5023306f095f8b1f47727c.jpg" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Tim Marshall</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="./img/galeria/53099f80eb41004a80a8d0767354ae50.jpg" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Christian Joudrey</span>                            
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="./img/galeria/5d7ed5d86d263afb93206557c506e772.jpg" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Steve Carter</span>                            
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="./img/galeria/0aa6c105b235289b9ad90a09e831e8fc.jpg" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="./img/galeria/7cdfdc4c1f748518db878628469e103d.jpg" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Rosan Harmens</span>                            
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="./img/galeria/ce82256d287fef0b2d5d2e4ab3297d52.jpg" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="credit">Photo: Annie Spratt</span>                            
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>    
+                    <ul class="carousel__thumbnails">
+                        <li>
+                            <label for="slide-1"><img src="./img/galeria/2f44d3c52f5023306f095f8b1f47727c.jpg" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-2"><img src="./img/galeria/53099f80eb41004a80a8d0767354ae50.jpg" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-3"><img src="./img/galeria/5d7ed5d86d263afb93206557c506e772.jpg" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-4"><img src="./img/galeria/0aa6c105b235289b9ad90a09e831e8fc.jpg" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-5"><img src="./img/galeria/7cdfdc4c1f748518db878628469e103d.jpg" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-6"><img src="./img/galeria/ce82256d287fef0b2d5d2e4ab3297d52.jpg" alt=""></label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="container-alqui">
+            <h2 class="alqui-titulo">Alquileres</h2>
+            <div class="alqui">
+                <div class="casa-alqui">
+                    <img src="./img/galeria/house-1237469.jpg" alt="">
+                    <h5>Casa de 4 ambientes</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae repellendus ad illo blanditiis aliquam in, quam cumque laboriosam quos. Quia optio, ipsam tempora minima perspiciatis id architecto minus neque quaerat.</p>
+                    <div class="iconos-alquileres">
+                        <div class="icon-cas">
+                            <img src="./iconos/cama.png" alt="">
+                        </div>
+                        <div class="icon-cas">
+                            <img src="./iconos/ducha.png" alt="">
+                        </div>
+                        <div class="icon-cas">
+                            <img src="./iconos/cama (1).png" alt="">
+                        </div>
+                    </div>
+                    <div class="btn-alqui">
+                        <button><a href="#">Ver mas</a></button>
+                    </div>
+                </div>
+                <div class="casa-alqui">
+                    <img src="./img/galeria/house-5017489.jpg" alt="">
+                    <h5>Casa de 4 ambientes</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae repellendus ad illo blanditiis aliquam in, quam cumque laboriosam quos. Quia optio, ipsam tempora minima perspiciatis id architecto minus neque quaerat.</p>
+                    <div class="iconos-alquileres">
+                        <div class="icon-cas">
+                            <img src="./iconos/cama.png" alt="">
+                        </div>
+                        <div class="icon-cas">
+                            <img src="./iconos/ducha.png" alt="">
+                        </div>
+                        <div class="icon-cas">
+                            <img src="./iconos/cama (1).png" alt="">
+                        </div>
+                    </div>
+                    <div class="btn-alqui">
+                        <button><a href="#">Ver mas</a></button>
+                    </div>
+                </div>
+                <div class="casa-alqui">
+                    <img src="./img/galeria/house-634483.jpg" alt="">
+                    <h5>Casa de 4 ambientes</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae repellendus ad illo blanditiis aliquam in, quam cumque laboriosam quos. Quia optio, ipsam tempora minima perspiciatis id architecto minus neque quaerat.</p>
+                    <div class="iconos-alquileres">
+                        <div class="icon-cas">
+                            <img src="./iconos/cama.png" alt="">
+                        </div>
+                        <div class="icon-cas">
+                            <img src="./iconos/ducha.png" alt="">
+                        </div>
+                        <div class="icon-cas">
+                            <img src="./iconos/cama (1).png" alt="">
+                        </div>
+                    </div>
+                    <div class="btn-alqui">
+                        <button><a href="#">Ver mas</a></button>
+                    </div>
+                </div>
+                <div class="casa-alqui">
+                    <img src="./img/galeria/9eff22754d980526dfcc790f22e94b47.jpg" alt="">
+                    <h5>Casa de 4 ambientes</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae repellendus ad illo blanditiis aliquam in, quam cumque laboriosam quos. Quia optio, ipsam tempora minima perspiciatis id architecto minus neque quaerat.</p>
+                    <div class="iconos-alquileres">
+                        <div class="icon-cas">
+                            <img src="./iconos/cama.png" alt="">
+                        </div>
+                        <div class="icon-cas">
+                            <img src="./iconos/ducha.png" alt="">
+                        </div>
+                        <div class="icon-cas">
+                            <img src="./iconos/cama (1).png" alt="">
+                        </div>
+                    </div>
+                    <div class="btn-alqui">
+                        <button><a href="#">Ver mas</a></button>
+                    </div>
+                </div>
+                <div class="casa-alqui">
+                    <img src="./img/galeria/house-in-the-green-1493723.jpg" alt="">
+                    <h5>Casa de 4 ambientes</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae repellendus ad illo blanditiis aliquam in, quam cumque laboriosam quos. Quia optio, ipsam tempora minima perspiciatis id architecto minus neque quaerat.</p>
+                    <div class="iconos-alquileres">
+                        <div class="icon-cas">
+                            <img src="./iconos/cama.png" alt="">
+                        </div>
+                        <div class="icon-cas">
+                            <img src="./iconos/ducha.png" alt="">
+                        </div>
+                        <div class="icon-cas">
+                            <img src="./iconos/cama (1).png" alt="">
+                        </div>
+                    </div>
+                    <div class="btn-alqui">
+                        <button><a href="#">Ver mas</a></button>
+                    </div>
+                </div>
+                <div class="casa-alqui">
+                    <img src="./img/galeria/country-house-385372.jpg" alt="">
+                    <h5>Casa de 4 ambientes</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae repellendus ad illo blanditiis aliquam in, quam cumque laboriosam quos. Quia optio, ipsam tempora minima perspiciatis id architecto minus neque quaerat.</p>
+                    <div class="iconos-alquileres">
+                        <div class="icon-cas">
+                            <img src="./iconos/cama.png" alt="">
+                        </div>
+                        <div class="icon-cas">
+                            <img src="./iconos/ducha.png" alt="">
+                        </div>
+                        <div class="icon-cas">
+                            <img src="./iconos/cama (1).png" alt="">
+                        </div>
+                    </div>
+                    <div class="btn-alqui">
+                        <button><a href="#">Ver mas</a></button>
+                    </div>
+                </div>
+                <div class="casa-alqui">
+                    <img src="./img/galeria/single-family-home-2142476.jpg" alt="">
+                    <h5>Casa de 4 ambientes</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae repellendus ad illo blanditiis aliquam in, quam cumque laboriosam quos. Quia optio, ipsam tempora minima perspiciatis id architecto minus neque quaerat.</p>
+                    <div class="iconos-alquileres">
+                        <div class="icon-cas">
+                            <img src="./iconos/cama.png" alt="">
+                        </div>
+                        <div class="icon-cas">
+                            <img src="./iconos/ducha.png" alt="">
+                        </div>
+                        <div class="icon-cas">
+                            <img src="./iconos/cama (1).png" alt="">
+                        </div>
+                    </div>
+                    <div class="btn-alqui">
+                        <button><a href="#">Ver mas</a></button>
+                    </div>
+                </div>
+                <div class="casa-alqui">
+                    <img src="./img/galeria/pexels-julia-kuzenkov-1974596.jpg" alt="">
+                    <h5>Casa de 4 ambientes</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae repellendus ad illo blanditiis aliquam in, quam cumque laboriosam quos. Quia optio, ipsam tempora minima perspiciatis id architecto minus neque quaerat.</p>
+                    <div class="iconos-alquileres">
+                        <div class="icon-cas">
+                            <img src="./iconos/cama.png" alt="">
+                        </div>
+                        <div class="icon-cas">
+                            <img src="./iconos/ducha.png" alt="">
+                        </div>
+                        <div class="icon-cas">
+                            <img src="./iconos/cama (1).png" alt="">
+                        </div>
+                    </div>
+                    <div class="btn-alqui">
+                        <button><a href="#">Ver mas</a></button>
+                    </div>
+                </div>
+                <div class="casa-alqui">
+                    <img src="./img/galeria/pexels-bianca-1560065.jpg" alt="">
+                    <h5>Casa de 4 ambientes</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae repellendus ad illo blanditiis aliquam in, quam cumque laboriosam quos. Quia optio, ipsam tempora minima perspiciatis id architecto minus neque quaerat.</p>
+                    <div class="iconos-alquileres">
+                        <div class="icon-cas">
+                            <img src="./iconos/cama.png" alt="">
+                        </div>
+                        <div class="icon-cas">
+                            <img src="./iconos/ducha.png" alt="">
+                        </div>
+                        <div class="icon-cas">
+                            <img src="./iconos/cama (1).png" alt="">
+                        </div>
+                    </div>
+                    <div class="btn-alqui">
+                        <button><a href="#">Ver mas</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="contenedor-footer">
+        <div class="informacion-footer">
+            <div class="iconos-footer">
+                <h2>Alquiler de Casas</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores praesentium neque similique, dolor eveniet nostrum, impedit a eos soluta et eum reiciendis non sint, omnis qui velit provident inventore exercitationem?</p>
+                <div class="iconos-footer">
+                    <a href=""><img src="./iconos/facebook.svg" alt=""></a>
+                    <a href=""><img src="./iconos/instagram.svg" alt=""></a>
+                    <a href=""><img src="./iconos/twitter.svg" alt=""></a>
+                    <a href=""><img src="./iconos/whatsapp.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="lista-footer">
+                <ul class="lista-fo">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Alquiler</a></li>
+                    <li><a href="#">Quienes somos</a></li>
+                    <li><a href="#">Contactanos</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/galeria.js"></script>
+</body>
+</html>
