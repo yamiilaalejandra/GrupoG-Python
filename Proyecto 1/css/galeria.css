@@ -5,7 +5,7 @@
 }
 a{
     text-decoration: none;
-    color: rgb(155, 118, 55);
+    color: rgb(170, 143, 22);
 }
 .esconder{
   display: none;
@@ -20,7 +20,7 @@ a{
   cursor: pointer;
 }
 .contenedor-aside{
-    background-color: #c896549b;
+    background-color:#422c10d0;
     width: 25%;
     height: auto;
     padding: 10px;
@@ -287,6 +287,40 @@ section {
 .btn-alqui button:hover{
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
 }
+/* Estilos del footer */
+.contenedor-footer {
+  background-color: #650c0c;
+  color: #fff;
+  padding: 10px 0;
+}
+.informacion-footer {
+  display: flex;
+  justify-content: space-between;
+  padding:2%;
+  align-items: center;
+}
+.iconos-footer h2{
+  margin: 5px;
+}
+.iconos-footer p{
+  margin:2px;
+}
+.iconos-footer {
+  width: 45%;
+}
+.iconos-footer img{
+  width:20%;
+  padding: 2px;
+  margin: 5px;
+}
+.lista-fo{
+  align-items: none;
+}
+.lista-footer{
+  width: 45%;
+  margin-right: 20px;
+}
+
 @media screen and (max-width:1440px) {
   .boton-aside img{
     width:85%;
@@ -295,13 +329,60 @@ section {
     padding-top: 50px;
   }
 }
-@media screen and (max-width:870px){
+@media screen and (max-width:885px){
   .boton-aside img{
     width:50%;
   }
+  .contenedor-aside{
+    width: 50%;
+  }
+  .alqui{
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .btn-alqui{
+    width: 400px;
+  }
+  .casa-alqui h5{
+    font-size: 20px;
+  }
+  .casa-alqui p{
+    font-size: 15px;
+  }
+  .iconos-alquileres img{
+    width: 80%;
+  }
+  .btn-alqui a{
+    font-size: 20px;
+  }
+  .btn-alqui button{
+    width: 150px;
+    margin-left: 80%;
+  }
+}
+@media screen and (max-width:820px){
+  .alqui{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .casa-alqui h5{
+    font-size: 23px;
+  }
+  .casa-alqui p{
+    font-size: 18px;
+  }
+  .iconos-alquileres img{
+    width: 80%;
+  }
+  .btn-alqui a{
+    font-size: 20px;
+  }
+  .btn-alqui button{
+    width: 150px;
+    margin-left: 80%;
+  }
 }
 
-@media screen and (max-width:780px) and (orientation: landscape){
+@media screen and (max-width:768px) and (orientation: landscape){
   .contenedor-aside{
     width:auto;
     padding-top: 30px;
@@ -314,17 +395,143 @@ section {
     background-color: rgba(73, 5, 7, 0.478);
   }
   .btn-alqui{
-    width:400px;
+    width:500px;
     height: auto;
     margin-bottom: 5%;
     margin-left: 20%;
   }
+  .btn-alqui a{
+    font-size:20px;
+  }
   .alqui{
     grid-template-columns: repeat(1, 1fr);
   }
+  .casa-alqui{
+    font-size: 20px;
+  }
+  .casa-alqui h5{
+    font-size: 25px;
+  }
+  .iconos-alquileres img{
+    width: 70%;
+  }
 }
-@media screen and (min-width: px){
-  
+@media screen and (max-width: 680px){
+  .contenedor-aside{
+    width: 90%;
+  }
+  .form-dat{
+    font-size: 14px;
+  }
+  .alqui-titulo h2{
+    font-size: 0,9em;
+  }
+  .alqui{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .iconos-footer h2{
+    font-size: 16px;
+  }
+  .iconos-footer{
+    display: flex;
+    flex-direction: row;
+  }
+  .iconos-footer p{
+    font-size: 12px;
+  }
+  .lista-fo li a{
+    font-size: 14px;
+  }
+  .iconos-footer a img{
+    width: 100%;
+  }
+}
+@media screen and (max-width:480px) {
+  .casa-alqui{
+    width: 75%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+  }
+  .btn-alqui button{
+    width: 100px;
+    margin-left: -250px;
+  }
+}
+@media screen and (max-width:420px) {
+  .contenedor-aside{
+    width: 100%;
+  }
+  .casa-alqui{
+    width: 70%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+  }
+  .icon-cas img{
+    padding: 2px;
+  }
+  .casa-alqui h5{
+    font-size: 15px;
+  }
+  .casa-alqui p{
+    font-size: 10px;
+  }
+  .iconos-alquileres{
+    padding: 2px;
+  }
+  .iconos-alquileres img{
+    width: 50%;
+  }
+  .btn-alqui a{
+    font-size: 18px;
+  }
+  .btn-alqui button{
+    width: 100px;
+    margin-left: -300px;
+  }
+}
+@media screen and (max-width: 360px){
+  .contenedor-aside{
+    width: 100%;
+  }
+  .alqui{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .casa-alqui{
+    width: 60%;
+  }
+  .casa-alqui h5{
+    font-size: 18px;
+  }
+  .casa-alqui p{
+    font-size: 14px;
+  }
+  .iconos-alquileres img{
+    width: 50%;
+  }
+  .btn-alqui a{
+    font-size: 18px;
+  }
+  .btn-alqui button{
+    width: 150px;
+    margin-left: 80%;
+  }
+  .informacion-footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2px;
+  }
+  .iconos-footer h2{
+    font-size: 15px;
+  }
+  .iconos-footer p{
+    font-size: 12px;
+  }
+  .lista-fo li a{
+    font-size: 14px;
+  }
+  .iconos-footer a img{
+    width: 100%;
+  }
 }
 
 
@@ -403,36 +610,3 @@ nav a {
   padding: 40px;
 }
 
-/* Estilos del footer */
-.contenedor-footer {
-  background-color: #650c0c;
-  color: #fff;
-  padding: 10px 0;
-}
-.informacion-footer {
-  display: flex;
-  justify-content: space-between;
-  padding:2%;
-  align-items: center;
-}
-.iconos-footer h2{
-  margin: 5px;
-}
-.iconos-footer p{
-  margin:2px;
-}
-.iconos-footer {
-  width: 45%;
-}
-.iconos-footer img{
-  width:20%;
-  padding: 2px;
-  margin: 5px;
-}
-.lista-fo{
-  align-items: none;
-}
-.lista-footer{
-  width: 45%;
-  margin-right: 20px;
-}
