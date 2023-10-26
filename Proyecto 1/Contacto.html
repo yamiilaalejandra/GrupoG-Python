@@ -2,67 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quintas en Alquiler</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
 </head>
-<body>
-
- <header class="container-nav">
-        <nav class="navbar">
-          <a href="index.html" class="brand"></a>
-          <ul class="nav-links">
+<body>          
+  <header>
+    <nav>
+        <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="">Galeria</a></li>
-            <li><a href="">Servicios</a></li>
+            <li><a href="galeria.html">Quintas Disponibles</a></li>
+            <li><a href="Servicios.html">Servicios y Tarifas</a></li>
             <li><a href="Contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-  </header>
+        </ul>
+    </nav>
+</header>
 
-  <section>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26221.155622243397!2d-58.44228545007648!3d-34.76454820983185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1squinta%20lomas%20de%20zamora!5e0!3m2!1ses!2sar!4v1696552340143!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
-  </section>
-  
-  <section id="contact">
-      <h2>Escribinos</h2>
-      <form id="miFormulario" action="show-data.html" target="_blank">
-          <fieldset>
-            <label for="firstname">Nombre: </label>
-            <input size="60" type="text" name="firstname" placeholder="Ingrese su nombre aqui...">
-            <label for="Email">Email: </label>
-            <input size="60" type="text" name="Email" placeholder="Ingrese su Email">
-            <br><br> 
-            <label for="Asunto">Asunto: </label>
-            <input size="30" type="text" name="Asunto" placeholder="Asunto">
-            <br><br> 
-            <label for="Mensaje">Mensaje:</label>
-            <textarea name="Mensaje" rows="5" cols="100"></textarea>
-        </fieldset>
-        <button onclick="showAlert()">Enviar</button>
-        <button type="button" onclick="limpiarFormulario()">Eliminar</button>
-      </form>       
+<section class="hero">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26221.155622243397!2d-58.44228545007648!3d-34.76454820983185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1squinta%20lomas%20de%20zamora!5e0!3m2!1ses!2sar!4v1696552340143!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+  <h2>Dirección:</h2>
+  <p>Descubre la ubicación de nuestras quintas en entornos impresionantes y accesibles.
+     Te proporcionaremos la dirección exacta para que puedas planificar tu visita y
+      explorar personalmente los encantos que ofrecemos.</p>
 </section>
 
-<section id="Contacto">
-    <div class="container">
-          <h2>Contacto</h2>
-          <p>Puedes contactarnos a través de los siguientes medios:</p>
-          <ul>
-            <li><img src="img/contacto/correo.jpg" alt=""  class="logo"> info@quintasenalquiler.com </li>
-            <li><img src="img/contacto/w.jpg" alt="" class="logo"> 1122334455</li>
-            <li><img src="img/contacto/facebook.jpg" alt="" class="logo"> seguinos en facebook</li>
-            <li><img src="img/contacto/instagram.jpg" alt="" class="logo"> encontranos en instagram</li>
-          </ul>
-    </div>
+
+<section class="aboute">
+  <div class="container1">
+    <h2>Contacto</h2>
+    <p>Completa nuestro formulario en línea para recibir información detallada sobre nuestras quintas y servicios.
+      Cuéntanos más sobre tu evento y tus expectativas, y nos aseguraremos de adaptarnos a tus necesidades específicas.
+      <br>
+      Tambien puedes contactarnos a través de los siguientes medios:
+    </p>
+    <ul>
+      <li><img src="iconos/mail-bronce.svg" alt="" class="logo"> info@quintasenalquiler.com </li>
+      <li><img src="iconos/whatsapp.svg" alt="" class="logo"> 1122334455</li>
+      <li><img src="iconos/facebook.svg" alt="" class="logo"> seguinos en facebook</li>
+      <li><img src="iconos/instagram.svg" alt="" class="logo"> encontranos en instagram</li>
+    </ul>
+  </div>
+  <div class="container">
+    <h2>Escribinos!</h2>
+    <form id="miFormulario" action="show-data.html" target="_blank">
+      <fieldset>
+        <label for="firstname">Nombre: </label>
+        <input size="60" type="text" name="firstname" placeholder="Ingrese su nombre aqui...">
+        <br><br>
+        <label for="Email">Email: </label>
+        <input size="60" type="text" name="Email" placeholder="Ingrese su Email">
+        <br><br>
+        <label for="Asunto">Asunto: </label>
+        <input size="30" type="text" name="Asunto" placeholder="Asunto">
+        <br><br>
+        <label for="Mensaje">Mensaje:</label>
+        <textarea name="Mensaje" rows="5" cols="100"></textarea>
+      </fieldset>
+      <button type="button" class="cta-button" onclick="limpiarFormulario()">Enviar</button>
+    </form>
+  </div>
 </section>
 
-<footer>
-    <div class="container">
-      <p>&copy;  2023 Quintas en Alquiler</p>
-    </div>
+<section class="pago">
+  <img src="img/servicios/medios-de-pago.png" alt="medios de pago">
+</section>
+
+<footer class="contenedor-footer">
+  <div class="informacion-footer">
+      <div class="iconos-footer">
+        <h3>Quintas en alquiler</h3>
+          <div class="iconos-footer">
+              <a href=""><img src="./iconos/facebook.svg" alt=""></a>
+              <a href=""><img src="./iconos/instagram.svg" alt=""></a>
+              <a href=""><img src="./iconos/twitter.svg" alt=""></a>
+              <a href=""><img src="./iconos/whatsapp.svg" alt=""></a>
+          </div>
+      </div>
+      <div class="lista-footer">
+        <ul class="lista-fo">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="galeria.html">Alquiler</a></li>
+          <li><a href="Servicios.html">Servicios y Tarifas</a></li>
+          <li><a href="Contacto.html">Contactanos</a></li>
+      </ul>
+      </div>
+  </div>
 </footer>
-
 <script src="JavaScript.js"></script>
 </body>
 </html>
