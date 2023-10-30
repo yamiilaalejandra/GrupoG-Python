@@ -388,6 +388,9 @@ h5{
   margin-right: 20px;
 
 }
+.lista-fo li{
+  margin: 5px;
+}
 .lista-fo li a:hover{
   color: #f4f4f4;
 }

@@ -286,24 +286,49 @@ li {
   width: 45%;
 }
 .icono-footer img{
-  width:20%;
+  width:5%;
   padding: 2px;
   margin: 5px;
-}
-.lista-fo{
-  align-items: none;
 }
 .lista-footer{
   width: 45%;
   margin-right: 20px;
+
+}
+.lista-fo li a:hover{
+  color: #f4f4f4;
+}
+#pie li{
+  list-style: none;
+  font-size: 15px;
 }
 
-@media screen and (max-width:1440px) {
-  .icono-footer a img{
-    width: 100%;
+
+@media screen and (max-width:1180px) {
+  .icono-footer img{
+    width:10%;
+  }
+  .lista-fo li a{
+    font-size:20px;
   }
 }
-
+@media all and (max-width: 599px){
+  .pago {
+      padding: 10px;
+      margin: 0;  
+      width: 90%; 
+      height: 5rem; 
+  }
+   }
+   @media all and (min-width:600px) and (max-width:1023px) {
+     .pago{
+      padding: 20px;
+      margin: 10px;  
+      width: 90%; 
+      height: 5rem;
+      background-position: center;
+  }
+   }
 @media screen and (max-width: 680px){
 
   .iconos-footer h2{
@@ -323,7 +348,6 @@ li {
     width: 100%;
   }
 }
-
 @media screen and (max-width:414px){
   .menu li {
     display: flex;
