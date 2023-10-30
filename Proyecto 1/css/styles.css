@@ -299,100 +299,11 @@ li {
 }
 
 @media screen and (max-width:1440px) {
-  .boton-aside img{
-    width:85%;
-  }
-  .contenedor-aside{
-    padding-top: 50px;
-  }
-}
-@media screen and (max-width:885px){
-  .boton-aside img{
-    width:50%;
-  }
-  .contenedor-aside{
-    width: 50%;
-  }
-  .alqui{
+  .icono-footer a img{
     width: 100%;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .btn-alqui{
-    width: 400px;
-  }
-  .casa-alqui h5{
-    font-size: 20px;
-  }
-  .casa-alqui p{
-    font-size: 15px;
-  }
-  .iconos-alquileres img{
-    width: 80%;
-  }
-  .btn-alqui a{
-    font-size: 20px;
-  }
-  .btn-alqui button{
-    width: 150px;
-    margin-left: 80%;
-  }
-}
-@media screen and (max-width:820px){
-  .alqui{
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .casa-alqui h5{
-    font-size: 23px;
-  }
-  .casa-alqui p{
-    font-size: 18px;
-  }
-  .iconos-alquileres img{
-    width: 80%;
-  }
-  .btn-alqui a{
-    font-size: 20px;
-  }
-  .btn-alqui button{
-    width: 150px;
-    margin-left: 80%;
   }
 }
 
-@media screen and (max-width:768px) and (orientation: landscape){
-  .contenedor-aside{
-    width:auto;
-    padding-top: 30px;
-  }
-  .cajs-radio{
-    color: black;
-  }
-  .boton-aside img{
-    width: 60%;
-    background-color: rgba(73, 5, 7, 0.478);
-  }
-  .btn-alqui{
-    width:500px;
-    height: auto;
-    margin-bottom: 5%;
-    margin-left: 20%;
-  }
-  .btn-alqui a{
-    font-size:20px;
-  }
-  .alqui{
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .casa-alqui{
-    font-size: 20px;
-  }
-  .casa-alqui h5{
-    font-size: 25px;
-  }
-  .iconos-alquileres img{
-    width: 70%;
-  }
-}
 @media screen and (max-width: 680px){
 
   .iconos-footer h2{
@@ -412,20 +323,7 @@ li {
     width: 100%;
   }
 }
-@media screen and (max-width:480px) {
-  .casa-alqui{
-    width: 75%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
-  }
-  .btn-alqui button{
-    width: 100px;
-    margin-left: -250px;
-  }
-}
-@media screen and (max-width:420px) {
-  
-}
+
 @media screen and (max-width:414px){
   .menu li {
     display: flex;

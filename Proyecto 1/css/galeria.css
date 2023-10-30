@@ -601,6 +601,10 @@ h5{
   }
 }
 @media screen and (max-width: 414px) {
+  .menu li {
+    display: flex;
+    justify-content:space-around;
+  }
   .form-dat {
     font-size:20px;
   }
@@ -650,6 +654,10 @@ h5{
   }
 }
 @media screen and (max-width: 393px) {
+  .menu li {
+    display: flex;
+    justify-content:space-around;
+  }
   .casa-alqui{
     width:100%;
     overflow: hidden;
@@ -687,6 +695,10 @@ h5{
   }
 }
 @media screen and (max-width: 390px) {
+  .menu li {
+    display: flex;
+    justify-content:space-around;
+  }
   .casa-alqui{
     width:100%;
     overflow: hidden;
@@ -718,6 +730,10 @@ h5{
   }
 }
 @media screen and (max-width: 360px){
+  .menu li {
+    display: flex;
+    justify-content:space-around;
+  }
   .contenedor-aside{
     width: 100%;
   }
@@ -768,6 +784,10 @@ h5{
   }
 }
 @media screen and (max-width: 320px) {
+  .menu li {
+    display: flex;
+    justify-content:space-around;
+  }
   .btn-alqui button{
     margin-right:6%;
   }
